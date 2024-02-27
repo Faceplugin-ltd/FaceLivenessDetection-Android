@@ -54,7 +54,7 @@ class AboutActivity : AppCompatActivity() {
         }
 
         findViewById<TextView>(R.id.txtTelegram).setOnClickListener {
-            val general = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/andywu0202"))
+            val general = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/faceplugin"))
             val generalResolvers: HashSet<String> = HashSet()
             val generalResolveInfo: List<ResolveInfo> = packageManager.queryIntentActivities(general, 0)
             for (info in generalResolveInfo) {
@@ -63,7 +63,7 @@ class AboutActivity : AppCompatActivity() {
                 }
             }
 
-            val telegram = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/andywu0202"))
+            val telegram = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/faceplugin"))
             var goodResolver = 0
 
             val resInfo: List<ResolveInfo> = packageManager.queryIntentActivities(telegram, 0)

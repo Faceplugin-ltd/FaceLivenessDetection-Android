@@ -23,10 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical | left"
-        android:text=" We are a leading provider of SDKs for advanced biometric authentication technology, including Face Recognition, Face Liveness Detection, and ID Card Recognition.\n\n
-In addition to biometric authentication solutions, we provide software development services for computer vision and mobile applications\n\n
-With our team's extensive knowledge and proficiency in these areas, we can deliver exceptional results to our clients.\n\n
-If you're interested in learning more about how we can help you, please don't hesitate to get in touch with us today.\n\n\n
+        android:text="FacePlugin Ltd specializes in cutting-edge solutions including face liveness detection, ID card recognition, face recognition, biometric authentication, and e-KYC (Electronic Know Your Customer) solutions.\n\n
+Our solutions cater to a diverse range of industries, including finance, healthcare, retail, transportation, government, and more.\n\n
+We are always available to support you here.\n\n\n
 Please contact us:"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
@@ -97,7 +96,7 @@ Please contact us:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:text="Telegram: https://t.me/andywu0202"
+        android:text="Telegram: https://t.me/faceplugin"
         app:layout_constraintStart_toEndOf="@id/imageTelegram"
         app:layout_constraintTop_toTopOf="@id/imageTelegram"
         app:layout_constraintBottom_toBottomOf="@id/imageTelegram"

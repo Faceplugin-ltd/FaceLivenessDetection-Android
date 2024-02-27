@@ -103,7 +103,7 @@
             android:layout_height="48dp"
             android:layout_marginLeft="10dp"
             android:layout_weight="0.5"
-            android:text="About"
+            android:text="Help"
             app:icon="@drawable/ic_about" />
     </LinearLayout>
 
