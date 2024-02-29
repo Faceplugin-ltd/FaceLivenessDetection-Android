@@ -25,8 +25,7 @@
         android:gravity="center_vertical | left"
         android:text="FacePlugin Ltd specializes in cutting-edge solutions including face liveness detection, ID card recognition, face recognition, biometric authentication, and e-KYC (Electronic Know Your Customer) solutions.\n\n
 Our solutions cater to a diverse range of industries, including finance, healthcare, retail, transportation, government, and more.\n\n
-We are always available to support you here.\n\n\n
-Please contact us:"
+We are always available to support you here.\n\n\n"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
@@ -73,7 +72,7 @@ Please contact us:"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:text="Skype: live:.cid.6f515492327084aa"
+        android:text="Skype: live:.cid.bd9468a0cefb151d"
         app:layout_constraintStart_toEndOf="@id/imageSkype"
         app:layout_constraintTop_toTopOf="@id/imageSkype"
         app:layout_constraintBottom_toBottomOf="@id/imageSkype"

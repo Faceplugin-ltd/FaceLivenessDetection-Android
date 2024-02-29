@@ -14,6 +14,6 @@ dependencyResolutionManagement {
         jcenter()
     }
 }
-rootProject.name = "FaceRecognition"
+rootProject.name = "FaceLivenessDetection"
 include ':app'
 include ':libfacesdk'

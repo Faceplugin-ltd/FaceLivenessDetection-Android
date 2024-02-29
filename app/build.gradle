@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.faceplugin.facerecognition'
+    namespace 'com.faceplugin.faceliveness'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.faceplugin.facerecognition"
+        applicationId "com.faceplugin.faceliveness"
         minSdk 24
         targetSdk 33
         versionCode 2

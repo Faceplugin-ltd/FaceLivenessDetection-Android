@@ -1,4 +1,4 @@
-package com.faceplugin.facerecognition
+package com.faceplugin.faceliveness
 
 import android.graphics.Bitmap
 import android.os.Bundle

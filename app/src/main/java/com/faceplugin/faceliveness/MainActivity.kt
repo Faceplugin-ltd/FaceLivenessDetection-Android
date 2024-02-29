@@ -1,4 +1,4 @@
-package com.faceplugin.facerecognition
+package com.faceplugin.faceliveness
 
 import android.content.Intent
 import android.graphics.Bitmap
@@ -27,15 +27,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textWarning = findViewById<TextView>(R.id.textWarning)
-
+//        textWarning = findViewById<TextView>(R.id.textWarning)
 
         var ret = FaceSDK.setActivation(
-            "Nd7j+5R17t1DEkFbd8eXiVMSCdYkHNFMaLDYEMPtJehvdILceeRQDlzpCeOBw0BnyWGCK09XfQDX\n" +
-                    "l3jIeFIi001ynzyleFk5IwA7ZCqnYWBXOCaMfPpd/RUKMKewAdj5q5nbNRzTVIT2v2cir9g6yiNb\n" +
-                    "dav0nX3pLt0q+wB5gyyBZiBcL9Qg2vGeM7F/pN5j0m0v04BVle50GOpn7tIc4Bab+WEC3e9tYAQC\n" +
-                    "adKDtlWrV+wwsmvWtxbtafkohUEW/dGcjURPpQ1TVAj20wfpDdz6HEiXkJQ/jCbaQmg7haB9Pj9+\n" +
-                    "yl9CDAj/THRzoz8C193VhFQG6No8iUFc7w6oCg=="
+            "f0Y15I2DXE4BP9g3pkGRzcM7HQatMXrQ3B85fFNSb80QJ7txgdrdWpX8EbRjafdCoPBmv3TqeHRc\n" +
+                    "lTIrQBGF7sQUpe2XdEcrkjZgvQBhD4zFlAqMrBvaRaSiGE+LLGa/5XjrOlFpk+1UAlZcPiq+YrBG\n" +
+                    "eS5zDY7FkhPze1q9nsg19yJ7yDFFkCc04ChKcXyNAk8UipYc4CWWx8xnVticyDQI74bdm273kQJw\n" +
+                    "IhL/lwCspEDEVScFycCSIPPTDf3JX3jmZIjcKk8cQjWcPT00/Bly/eYM3KyDk19QXgQ9w86yCL3S\n" +
+                    "kpS91aW3SY7PqVZR2fK56bqxP4dsagSIUJHO6Q=="
         )
 
         if (ret == FaceSDK.SDK_SUCCESS) {
@@ -61,30 +60,30 @@ class MainActivity : AppCompatActivity() {
         dbManager.loadPerson()
 
         personAdapter = PersonAdapter(this, DBManager.personList)
-        val listView: ListView = findViewById<View>(R.id.listPerson) as ListView
-        listView.setAdapter(personAdapter)
-
-        findViewById<Button>(R.id.buttonEnroll).setOnClickListener {
-            val intent = Intent()
-            intent.setType("image/*")
-            intent.setAction(Intent.ACTION_PICK)
-            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), SELECT_PHOTO_REQUEST_CODE)
-        }
-
+//        val listView: ListView = findViewById<View>(R.id.listPerson) as ListView
+//        listView.setAdapter(personAdapter)
+//
+//        findViewById<Button>(R.id.buttonEnroll).setOnClickListener {
+//            val intent = Intent()
+//            intent.setType("image/*")
+//            intent.setAction(Intent.ACTION_PICK)
+//            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), SELECT_PHOTO_REQUEST_CODE)
+//        }
+//
         findViewById<Button>(R.id.buttonIdentify).setOnClickListener {
             startActivity(Intent(this, CameraActivity::class.java))
         }
 
-        findViewById<Button>(R.id.buttonCapture).setOnClickListener {
-            startActivity(Intent(this, CaptureActivity::class.java))
-        }
-
-        findViewById<Button>(R.id.buttonAttribute).setOnClickListener {
-            val intent = Intent()
-            intent.setType("image/*")
-            intent.setAction(Intent.ACTION_PICK)
-            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), SELECT_ATTRIBUTE_REQUEST_CODE)
-        }
+//        findViewById<Button>(R.id.buttonCapture).setOnClickListener {
+//            startActivity(Intent(this, CaptureActivity::class.java))
+//        }
+//
+//        findViewById<Button>(R.id.buttonAttribute).setOnClickListener {
+//            val intent = Intent()
+//            intent.setType("image/*")
+//            intent.setAction(Intent.ACTION_PICK)
+//            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), SELECT_ATTRIBUTE_REQUEST_CODE)
+//        }
 
         findViewById<Button>(R.id.buttonSettings).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))

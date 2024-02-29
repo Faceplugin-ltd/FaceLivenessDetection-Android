@@ -34,47 +34,6 @@
             app:title="@string/liveness_level"
             app:useSimpleSummaryProvider="true" />
 
-        <EditTextPreference
-            app:defaultValue="0.8"
-            app:key="identify_threshold"
-            app:title="@string/identify_threshold"
-            app:useSimpleSummaryProvider="true" />
-
-        <EditTextPreference
-            app:defaultValue="10.0"
-            app:key="yaw_threshold"
-            app:title="@string/yaw_threshold"
-            app:useSimpleSummaryProvider="true" />
-
-        <EditTextPreference
-            app:defaultValue="10.0"
-            app:key="roll_threshold"
-            app:title="@string/roll_threshold"
-            app:useSimpleSummaryProvider="true" />
-
-        <EditTextPreference
-            app:defaultValue="10.0"
-            app:key="pitch_threshold"
-            app:title="@string/pitch_threshold"
-            app:useSimpleSummaryProvider="true" />
-
-        <EditTextPreference
-            app:defaultValue="0.5"
-            app:key="occlusion_threshold"
-            app:title="@string/occlusion_threshold"
-            app:useSimpleSummaryProvider="true" />
-
-        <EditTextPreference
-            app:defaultValue="0.8"
-            app:key="eyeclose_threshold"
-            app:title="@string/eyeclose_threshold"
-            app:useSimpleSummaryProvider="true" />
-
-        <EditTextPreference
-            app:defaultValue="0.5"
-            app:key="mouthopen_threshold"
-            app:title="@string/mouthopen_threshold"
-            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -84,10 +43,6 @@
         <Preference
             app:key="restore_default_settings"
             app:title="@string/restore_default_settings" />
-
-        <Preference
-            app:key="clear_all_person"
-            app:title="@string/clear_all_person" />
 
     </PreferenceCategory>
 

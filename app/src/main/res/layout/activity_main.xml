@@ -11,69 +11,75 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:gravity="center"
-        android:text="Face Recognition"
+        android:text="Face Liveness Detection"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
 
-   <LinearLayout
-       android:id="@+id/lytButtons1"
-       app:layout_constraintTop_toBottomOf="@+id/textTitle"
-       android:orientation="horizontal"
-       android:layout_width="match_parent"
-       android:layout_margin="16dp"
-       android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lytlogo"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="50dp"
+        >
 
-       <com.royrodriguez.transitionbutton.TransitionButton
-           android:id="@+id/buttonEnroll"
-           app:defaultColor="@color/pink_700"
-           android:layout_width="0dp"
-           android:layout_height="48dp"
-           android:layout_marginRight="10dp"
-           android:layout_weight="0.5"
-           android:text="Enroll"
-           app:icon="@drawable/ic_register" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_faceplugin"
+            >
 
-       <com.royrodriguez.transitionbutton.TransitionButton
-           android:id="@+id/buttonIdentify"
-           app:defaultColor="@color/pink_700"
-           android:layout_width="0dp"
-           android:layout_height="48dp"
-           android:text="Identify"
-           android:layout_weight="0.5"
-           android:layout_marginLeft="10dp"
-           app:icon="@drawable/ic_person_search"/>
-   </LinearLayout>
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytButtons1"
+        app:layout_constraintTop_toBottomOf="@+id/lytlogo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        >
+
+        <com.royrodriguez.transitionbutton.TransitionButton
+            android:id="@+id/buttonIdentify"
+            app:defaultColor="@color/pink_700"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="Liveness"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="40dp"
+            app:icon="@drawable/ic_person_search"/>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/lytButtons2"
         app:layout_constraintTop_toBottomOf="@+id/lytButtons1"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_margin="16dp"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
 
         <com.royrodriguez.transitionbutton.TransitionButton
-            android:id="@+id/buttonCapture"
+            android:id="@+id/buttonSettings"
             app:defaultColor="@color/pink_700"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
             android:layout_weight="0.5"
-            android:text="Capture"
-            app:icon="@drawable/ic_capture" />
+            android:text="Settings"
+            app:icon="@drawable/ic_settings" />
 
-        <com.royrodriguez.transitionbutton.TransitionButton
-            android:id="@+id/buttonAttribute"
-            app:defaultColor="@color/pink_700"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:text="Attribute"
-            android:layout_weight="0.5"
-            android:layout_marginLeft="10dp"
-            app:icon="@drawable/ic_attribute"/>
     </LinearLayout>
 
     <LinearLayout
@@ -84,24 +90,17 @@
         android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_height="wrap_content">
-
-        <com.royrodriguez.transitionbutton.TransitionButton
-            android:id="@+id/buttonSettings"
-            app:defaultColor="@color/pink_700"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="0.5"
-            android:text="Settings"
-            app:icon="@drawable/ic_settings" />
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
 
         <com.royrodriguez.transitionbutton.TransitionButton
             android:id="@+id/buttonAbout"
             app:defaultColor="@color/pink_700"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
             android:layout_weight="0.5"
             android:text="Help"
             app:icon="@drawable/ic_about" />
@@ -169,36 +168,5 @@
 <!--            >-->
 <!--        </ImageView>-->
     </LinearLayout>
-
-    <ListView
-        android:id="@+id/listPerson"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:divider="@null"
-        android:dividerHeight="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/lytBrand"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lytButtons3" />
-
-    <TextView
-        android:id="@+id/textWarning"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text=""
-        android:background="@color/md_theme_light_error"
-        android:visibility="gone"
-        android:textSize="14dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/listPerson"
-        app:layout_constraintStart_toStartOf="@+id/listPerson"
-        app:layout_constraintTop_toTopOf="@+id/listPerson"
-        app:layout_constraintBottom_toBottomOf="@+id/listPerson"
-        >
-
-    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

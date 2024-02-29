@@ -1,4 +1,4 @@
-package com.faceplugin.facerecognition;
+package com.faceplugin.faceliveness;
 
 
 import static androidx.camera.core.ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST;

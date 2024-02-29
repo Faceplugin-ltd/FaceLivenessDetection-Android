@@ -1,4 +1,4 @@
-package com.faceplugin.facerecognition
+package com.faceplugin.faceliveness
 
 import android.content.Context
 import android.os.Bundle
@@ -170,20 +170,20 @@ class SettingsActivity : AppCompatActivity() {
                 }
             }
 
-            rollThresholdPref?.setOnPreferenceChangeListener{ preference, newValue ->
-                val stringPref = newValue as String
-                try {
-                    if(stringPref.toFloat() < 0.0f || stringPref.toFloat() > 30.0f) {
-                        Toast.makeText(context, getString(R.string.invalid_value), Toast.LENGTH_SHORT).show()
-                        false
-                    } else {
-                        true
-                    }
-                } catch (e:Exception) {
-                    Toast.makeText(context, getString(R.string.invalid_value), Toast.LENGTH_SHORT).show()
-                    false
-                }
-            }
+//            rollThresholdPref?.setOnPreferenceChangeListener{ preference, newValue ->
+//                val stringPref = newValue as String
+//                try {
+//                    if(stringPref.toFloat() < 0.0f || stringPref.toFloat() > 30.0f) {
+//                        Toast.makeText(context, getString(R.string.invalid_value), Toast.LENGTH_SHORT).show()
+//                        false
+//                    } else {
+//                        true
+//                    }
+//                } catch (e:Exception) {
+//                    Toast.makeText(context, getString(R.string.invalid_value), Toast.LENGTH_SHORT).show()
+//                    false
+//                }
+//            }
 
             pitchThresholdPref?.setOnPreferenceChangeListener{ preference, newValue ->
                 val stringPref = newValue as String
