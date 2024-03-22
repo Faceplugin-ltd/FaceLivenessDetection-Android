@@ -2,7 +2,6 @@ package com.faceplugin.faceliveness
 
 import android.content.Intent
 import android.graphics.Bitmap
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.*
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        textWarning = findViewById<TextView>(R.id.textWarning)
+        textWarning = findViewById<TextView>(R.id.textWarning)
 
         var ret = FaceSDK.setActivation(
             "f0Y15I2DXE4BP9g3pkGRzcM7HQatMXrQ3B85fFNSb80QJ7txgdrdWpX8EbRjafdCoPBmv3TqeHRc\n" +
@@ -89,12 +88,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
         findViewById<Button>(R.id.buttonAbout).setOnClickListener {
-            startActivity(Intent(this, AboutActivity::class.java))
-        }
-
-        findViewById<LinearLayout>(R.id.lytBrand).setOnClickListener {
-            val browse = Intent(Intent.ACTION_VIEW, Uri.parse("https://faceplugin.com"))
-            startActivity(browse)
+            startActivity(Intent(this, AboutUsActivity::class.java))
         }
     }
 

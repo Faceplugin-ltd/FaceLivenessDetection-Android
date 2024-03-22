@@ -1,17 +1,26 @@
 package com.faceplugin.faceliveness;
 
 
+import static android.app.PendingIntent.getActivity;
 import static androidx.camera.core.ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST;
+
+import static java.security.AccessController.getContext;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.media.Image;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Size;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +33,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.preference.PreferenceManager;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.ocp.facesdk.FaceBox;
@@ -32,6 +42,7 @@ import com.ocp.facesdk.FaceSDK;
 
 import java.nio.ByteBuffer;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -56,6 +67,8 @@ public class CameraActivity extends AppCompatActivity {
 
     private Boolean recognized = false;
 
+    private String savedCameraPosition = "front";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +90,46 @@ public class CameraActivity extends AppCompatActivity {
                 setUpCamera();
             });
         }
+
+        if(SettingsActivity.getCameraLens(context) == CameraSelector.LENS_FACING_BACK) {
+            savedCameraPosition = "back";
+        } else if (SettingsActivity.getCameraLens(context) == CameraSelector.LENS_FACING_FRONT){
+            savedCameraPosition = "front";
+        }
+
+        findViewById(R.id.ib_switchCamera).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                faceView.setVisibility(View.INVISIBLE);
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+                SharedPreferences.Editor editor = prefs.edit();
+                if(SettingsActivity.getCameraLens(context) == CameraSelector.LENS_FACING_BACK) {
+                    editor.putString("camera_lens", "front");
+                } else if (SettingsActivity.getCameraLens(context) == CameraSelector.LENS_FACING_FRONT){
+                    editor.putString("camera_lens", "back");
+                }
+                editor.commit();
+
+                setUpCamera();
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Do something after 5s = 5000ms
+                        faceView.setVisibility(View.VISIBLE);
+                    }
+                }, 2000);
+            }
+        });
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("camera_lens", savedCameraPosition);
+        editor.apply();
     }
 
     @Override
@@ -212,6 +265,7 @@ public class CameraActivity extends AppCompatActivity {
                 public void run() {
                     faceView.setFrameSize(new Size(bitmap.getWidth(), bitmap.getHeight()));
                     faceView.setFaceBoxes(faceBoxes);
+                    //faceView.setVisibility(View.VISIBLE);
                 }
             });
 
