@@ -32,7 +32,7 @@
             android:label="@string/title_activity_settings"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AboutActivity"
+            android:name=".AboutUsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

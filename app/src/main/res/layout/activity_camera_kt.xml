@@ -22,4 +22,15 @@
         app:layout_constraintTop_toTopOf="parent">
     </com.faceplugin.faceliveness.FaceView>
 
+    <ImageButton
+        android:id="@+id/ib_switchCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_margin="26dp"
+        app:srcCompat="@drawable/switchcamera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,46 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".AboutActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtTitle"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:gravity="center"
-        android:text="FacePlugin Ltd Technology"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/txtAbout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical | left"
-        android:text="FacePlugin Ltd specializes in cutting-edge solutions including face liveness detection, ID card recognition, face recognition, biometric authentication, and e-KYC (Electronic Know Your Customer) solutions.\n\n
-Our solutions cater to a diverse range of industries, including finance, healthcare, retail, transportation, government, and more.\n\n
-We are always available to support you here.\n\n\n"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle">
-
-    </TextView>
 
     <ImageView
         android:id="@+id/imageEmail"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtAbout"
-        android:tint="@color/md_theme_dark_primary"
-        app:srcCompat="@drawable/ic_email">
+        app:tint="@color/md_theme_dark_primary"
+        app:srcCompat="@drawable/ic_email"
+        app:layout_constraintTop_toTopOf="parent">
     </ImageView>
 
     <TextView
@@ -59,14 +32,14 @@ We are always available to support you here.\n\n\n"
 
     <ImageView
         android:id="@+id/imageSkype"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
-        android:tint="@color/md_theme_dark_primary"
+        app:tint="@color/md_theme_dark_primary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageEmail"
-        app:srcCompat="@drawable/ic_skype"></ImageView>
+        app:srcCompat="@drawable/ic_skype" />
 
     <TextView
         android:layout_width="300dp"
@@ -81,11 +54,11 @@ We are always available to support you here.\n\n\n"
 
     <ImageView
         android:id="@+id/imageTelegram"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
-        android:tint="@color/md_theme_dark_primary"
+        app:tint="@color/md_theme_dark_primary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageSkype"
         app:srcCompat="@drawable/ic_telegram"></ImageView>
@@ -104,11 +77,11 @@ We are always available to support you here.\n\n\n"
 
     <ImageView
         android:id="@+id/imageWhatsApp"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
-        android:tint="@color/md_theme_dark_primary"
+        app:tint="@color/md_theme_dark_primary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageTelegram"
         app:srcCompat="@drawable/ic_whatsapp"></ImageView>
@@ -127,16 +100,17 @@ We are always available to support you here.\n\n\n"
 
     <ImageView
         android:id="@+id/imageGithub"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
-        android:tint="@color/md_theme_dark_primary"
+        app:tint="@color/md_theme_dark_primary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageWhatsApp"
-        app:srcCompat="@drawable/ic_github"></ImageView>
+        app:srcCompat="@drawable/ic_github"/>
 
     <TextView
+        android:id="@+id/txtGithub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -144,7 +118,14 @@ We are always available to support you here.\n\n\n"
         app:layout_constraintStart_toEndOf="@id/imageGithub"
         app:layout_constraintTop_toTopOf="@id/imageGithub"
         app:layout_constraintBottom_toBottomOf="@id/imageGithub"
-        android:autoLink="web"
-        >
-    </TextView>
+        android:autoLink="web"/>
+
+    <TextView
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGithub"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
