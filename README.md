@@ -14,7 +14,7 @@ Empowering security, our **liveness detection** model excels in identifying and 
 
 <h2>Screenshots</h2>
 <div align="left">
-<img alt="" src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/assets/160750757/76ae9b59-010a-4500-a483-923ebbedb01b" width=200/>
+<img alt="" src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/assets/160750757/3a900b76-2f8e-4894-89bb-2474ac6aeb7a" width=200/>
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/assets/160750757/bff5371b-b73d-4ced-a096-9db8b6eb037f" width=200/>
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/assets/160750757/4d66987d-6eff-4ea7-b146-833adfd2c14f" width=200/>
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/assets/160750757/4ce4a283-09bd-4637-b7d0-35a98307b794" width=200/>
