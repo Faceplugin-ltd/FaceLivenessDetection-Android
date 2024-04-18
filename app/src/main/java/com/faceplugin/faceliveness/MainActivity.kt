@@ -29,11 +29,11 @@ class MainActivity : AppCompatActivity() {
         textWarning = findViewById<TextView>(R.id.textWarning)
 
         var ret = FaceSDK.setActivation(
-            "f0Y15I2DXE4BP9g3pkGRzcM7HQatMXrQ3B85fFNSb80QJ7txgdrdWpX8EbRjafdCoPBmv3TqeHRc\n" +
-                    "lTIrQBGF7sQUpe2XdEcrkjZgvQBhD4zFlAqMrBvaRaSiGE+LLGa/5XjrOlFpk+1UAlZcPiq+YrBG\n" +
-                    "eS5zDY7FkhPze1q9nsg19yJ7yDFFkCc04ChKcXyNAk8UipYc4CWWx8xnVticyDQI74bdm273kQJw\n" +
-                    "IhL/lwCspEDEVScFycCSIPPTDf3JX3jmZIjcKk8cQjWcPT00/Bly/eYM3KyDk19QXgQ9w86yCL3S\n" +
-                    "kpS91aW3SY7PqVZR2fK56bqxP4dsagSIUJHO6Q=="
+            "fj/KH0MjIOG+oMW2YVROoAKW9DZkGeNyZ8KbutGslPtYir3yokTq1t/WMFshNzy/GMGUU+3RcmlR\n" +
+            "HfmKaGTKB1Vo9dD7PzcZYsWF07VtLstDf3TCD0ZIF6/MAbeQ1mGn9YtDI9r2Z9ZRxJTsJ+THlGUY\n" +
+            "BPbMu4d8vvsDKySO7TQAGS4J73PKZ6JodU9T2Kx8m2IKUWhH6mBLr/QFzEHIgbBV45WEmB/5lYn7\n" +
+            "yytTrJreM0taCZrVOcUlCNt+YxBaBW8tULxHAsuosScDDkwKZ7XxNigQCSicMgHA59FS2SKPxMG2\n" +
+            "iIVPNK20JOn1AjsXHOUmTUzZGpC0RAf++JDBcg=="
         )
 
         if (ret == FaceSDK.SDK_SUCCESS) {
@@ -59,30 +59,9 @@ class MainActivity : AppCompatActivity() {
         dbManager.loadPerson()
 
         personAdapter = PersonAdapter(this, DBManager.personList)
-//        val listView: ListView = findViewById<View>(R.id.listPerson) as ListView
-//        listView.setAdapter(personAdapter)
-//
-//        findViewById<Button>(R.id.buttonEnroll).setOnClickListener {
-//            val intent = Intent()
-//            intent.setType("image/*")
-//            intent.setAction(Intent.ACTION_PICK)
-//            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), SELECT_PHOTO_REQUEST_CODE)
-//        }
-//
         findViewById<Button>(R.id.buttonIdentify).setOnClickListener {
             startActivity(Intent(this, CameraActivity::class.java))
         }
-
-//        findViewById<Button>(R.id.buttonCapture).setOnClickListener {
-//            startActivity(Intent(this, CaptureActivity::class.java))
-//        }
-//
-//        findViewById<Button>(R.id.buttonAttribute).setOnClickListener {
-//            val intent = Intent()
-//            intent.setType("image/*")
-//            intent.setAction(Intent.ACTION_PICK)
-//            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), SELECT_ATTRIBUTE_REQUEST_CODE)
-//        }
 
         findViewById<Button>(R.id.buttonSettings).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
