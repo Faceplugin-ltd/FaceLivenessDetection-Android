@@ -2,8 +2,16 @@
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-Javascript/assets/160750757/657130a9-50f2-486d-b6d5-b78bcec5e6e2.png" width=200/>
 </div>
 
-# Face Liveness Detection (Anti Spoofing) SDK For Android
+# On-Premise Face Liveness Detection (Anti Spoofing) SDK For Android
 Empowering security, our **liveness detection** model excels in identifying and thwarting threats including **printed photos, video replay, 3D masks, and deepfake attempts,** ensuring robust and reliable authentication.
+<br>This is **on-premise** SDK which means everything is process on your phone and **NO** data leaves the device 
+<br></br>
+
+## Try this APP on Google Play
+<a href="https://play.google.com/store/apps/details?id=com.faceplugin.liveness" target="_blank">
+  <img alt="" src="https://user-images.githubusercontent.com/125717930/230804673-17c99e7d-6a21-4a64-8b9e-a465142da148.png" height=80/>
+</a>
+<br></br>
 
 <div align="left">
 <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
