@@ -8,7 +8,7 @@
 
 # Liveness Detection SDK Android - Fully On-Premise - iBeta Level 2 Compliant
 ## Overview
-Our **iBeta level 2 Compliant** `liveness detection SDK` excels in identifying and thwarting threats including **printed photos, video replay, 3D masks, and deepfake attempts,** ensuring robust and reliable authentication.
+The **iBeta level 2 Compliant** `liveness detection SDK` from [Faceplugin](https://faceplugin.com/) excels in identifying and thwarting threats including **printed photos, video replay, 3D masks, and deepfake attempts,** ensuring robust and reliable authentication.
 <br>This is on-premise `liveness detection Android SDK` which means everything is processed in your phone and **NO** data leaves the device 
 <br></br>
 
