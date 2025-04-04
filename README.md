@@ -4,7 +4,7 @@
 
 #### Hugging Face - [Here](https://huggingface.co/spaces/FacePlugin-Ltd/FaceRecognition-LivenessDetection-SDK) <span> <img src="https://github.com/user-attachments/assets/303cda2b-a195-42c5-b481-6b2b796d2910" style="margin: 4px; width: 36px; height: 20px"> <span/>
 #### Open Source FaceSDK- [Here](https://github.com/Faceplugin-ltd/Open-Source-Face-Recognition-SDK) <span> <img src="https://github.com/user-attachments/assets/303cda2b-a195-42c5-b481-6b2b796d2910" style="margin: 4px; width: 36px; height: 20px"> <span/>
-#### Documentation- [Here](https://docs.faceplugin.com)
+#### Documentation- [Here](https://doc.faceplugin.com)
 
 # Liveness Detection SDK Android - Fully On-Premise - iBeta Level 2 Compliant
 ## Overview
@@ -43,20 +43,29 @@ The **iBeta level 2 Compliant** `liveness detection SDK` from [Faceplugin](https
 ## Install License  
 The code below shows how to use the license: https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/blob/69c8580a22d81406046bb157084b12f6f07b434b/app/src/main/java/com/faceplugin/faceliveness/MainActivity.kt#L32-L40
 
-If you want to get license, please contact us
+Please [contact us](#contact) to get the license.
 
 ## List of our Products
-* **[FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-Android)**
-* **[FaceRecognition-LivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceRecognition-iOS)**
-* **[FaceRecognition-LivenessDetection-Javascript](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Javascript)**
-* **[FaceLivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android)**
-* **[FaceLivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceLivenessDetection-iOS)**
-* **[FaceLivenessDetection-Linux](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Linux)**
-* **[FaceRecognition-LivenessDetection-React](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-React)**
-* **[FaceRecognition-LivenessDetection-Vue](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Vue)**
+* **[Face Recognition with Liveness Detection-Android (Java, Kotlin)](https://github.com/Faceplugin-ltd/FaceRecognition-Android)**
+* **[Face Recognition with Liveness Detection-iOS (Objective C, Swift)](https://github.com/Faceplugin-ltd/FaceRecognition-iOS)**
+* **[Face Recognition with Liveness Detection-React Native](https://github.com/Faceplugin-ltd/FaceRecognition-React-Native)**
+* **[Face Recognition with Liveness Detection-Flutter](https://github.com/Faceplugin-ltd/FaceRecognition-Flutter)**
+* **[Face Recognition with Liveness Detection-Ionic Cordova](https://github.com/Faceplugin-ltd/FaceRecognition-Ionic-Cordova)**
+* **[Face Recognition with Liveness Detection-.Net MAUI](https://github.com/Faceplugin-ltd/FaceRecognition-.Net)**
+* **[Face Recognition with Liveness Detection-.Net WPF](https://github.com/Faceplugin-ltd/FaceRecognition-WPF-.Net)**
+* **[Face Recognition with Liveness Detection-Javascript](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Javascript)**
+* **[Face Recognition with LivenessDetection-React](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-React)**
+* **[Face Recognition with LivenessDetection-Vue](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Vue)**
+* **[Face Liveness Detection-Android (Java, Kotlin)](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android)**
+* **[Face Liveness Detection-iOS (Objective C, Swift)](https://github.com/Faceplugin-ltd/FaceLivenessDetection-iOS)**
+* **[Face Liveness Detection-Linux](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Linux)**
+* **[Face Liveness Detection-Docker](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker)**
+* **[Open Source Face Recognition SDK](https://github.com/Faceplugin-ltd/Open-Source-Face-Recognition-SDK)**
 * **[Face Recognition SDK](https://github.com/Faceplugin-ltd/Face-Recognition-SDK)**
 * **[Liveness Detection SDK](https://github.com/Faceplugin-ltd/Face-Liveness-Detection-SDK)**
+* **[Palm Recognition SDK](https://github.com/Faceplugin-ltd/Palm-Recognition)**
 * **[ID Card Recognition](https://github.com/Faceplugin-ltd/ID-Card-Recognition)**
+* **[ID Document Liveness Detection](https://github.com/Faceplugin-ltd/ID-Document-Liveness-Detection)**
 
 ## Contact
 <div align="left">
