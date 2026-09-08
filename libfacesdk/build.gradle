@@ -1,0 +1,10 @@
+def aar = file("facelivenessdk.aar")
+if (!aar.exists()) {
+    throw new GradleException(
+        "Missing libfacesdk/facelivenessdk.aar.\n" +
+        "From FaceLiveness-Android-SDK run:\n" +
+        "  python scripts/export.py --rebuild"
+    )
+}
+configurations.maybeCreate("default")
+artifacts.add("default", aar)
