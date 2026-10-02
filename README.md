@@ -142,7 +142,7 @@ Minimal integration (details: [doc.faceplugin.com](https://doc.faceplugin.com)):
 2. `settings.gradle`: `include ':libfacesdk'`
 3. `app/build.gradle`: `implementation project(':libfacesdk')`, `minSdk 24`, `abiFilters 'arm64-v8a', 'armeabi-v7a'`, and `packaging { jniLibs { useLegacyPackaging = true } }`
 4. Add `CAMERA` permission.
-5. On a **background** thread: `FaceLivenessSDK.setActivation(context, "FP1.…")` → `FaceLivenessSDK.init(context)` (`0` = success).
+5. On a **background** thread: `FaceLivenessSDK.setActivation(context, "YOUR_LICENSE_KEY")` → `FaceLivenessSDK.init(context)` (`0` = success).
 
 Optional: copy `app/.../kit/` (`FaceLivenessClient`) for demo-style threading / camera helpers.
 
