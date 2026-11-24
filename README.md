@@ -139,9 +139,9 @@ Keep `applicationId` **`com.faceplugin.faceliveness`** for the included license.
 
 ### Screenshots
 
-| Home | Liveness | Settings | About |
-| ---- | -------- | -------- | ----- |
-| <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/home.png" alt="FacePlugin Face Liveness — Home with Liveness, Settings, About" width="220"/></p> | <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/liveness.png" alt="FacePlugin Face Liveness — live camera anti-spoofing with face box and metrics" width="220"/></p> | <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/settings.png" alt="FacePlugin Face Liveness — Settings for camera lens and liveness threshold" width="220"/></p> | <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/about.png" alt="FacePlugin Face Liveness SDK — About, on-device anti-spoofing" width="220"/></p> |
+| Home | Liveness checks | Active liveness | Passive liveness |
+| ---- | --------------- | --------------- | ---------------- |
+| <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/home.png" alt="FacePlugin Face Liveness — Home: on-device anti-spoofing, Active and Passive liveness" width="220"/></p> | <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/checks.png" alt="FacePlugin Face Liveness — choose Active or Passive liveness, Settings and About" width="220"/></p> | <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/active.png" alt="FacePlugin Face Liveness — Active liveness result: anti-spoofing gate and challenges passed" width="220"/></p> | <p align="center"><img src="https://raw.githubusercontent.com/Faceplugin-ltd/faceplugin-assets/main/screenshots/face-liveness/mobile/passive.png" alt="FacePlugin Face Liveness — Passive liveness: live camera anti-spoofing with liveness, quality and pose" width="220"/></p> |
 
 ## Active liveness
 
