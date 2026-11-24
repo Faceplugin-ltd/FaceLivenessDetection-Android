@@ -1,0 +1,56 @@
+<resources>
+    <string-array name="camera_lens">
+        <item>Front</item>
+        <item>Back</item>
+    </string-array>
+
+    <string-array name="camera_lens_values">
+        <item>front</item>
+        <item>back</item>
+    </string-array>
+
+    <string-array name="active_checks">
+        <item>Blink</item>
+        <item>Smile</item>
+        <item>Turn left</item>
+        <item>Turn right</item>
+        <item>Look up</item>
+        <item>Look down</item>
+        <item>Move closer</item>
+    </string-array>
+
+    <string-array name="active_checks_values">
+        <item>blink</item>
+        <item>smile</item>
+        <item>turn_left</item>
+        <item>turn_right</item>
+        <item>turn_up</item>
+        <item>turn_down</item>
+        <item>perspective</item>
+    </string-array>
+
+    <string-array name="active_check_count">
+        <item>1 challenge</item>
+        <item>2 challenges</item>
+        <item>3 challenges</item>
+        <item>4 challenges</item>
+        <item>5 challenges</item>
+    </string-array>
+
+    <string-array name="active_check_count_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="active_checks_default">
+        <item>blink</item>
+        <item>smile</item>
+        <item>turn_left</item>
+        <item>turn_right</item>
+        <item>turn_up</item>
+        <item>turn_down</item>
+    </string-array>
+</resources>

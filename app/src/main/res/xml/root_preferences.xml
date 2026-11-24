@@ -1,0 +1,149 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_camera"
+        app:title="@string/camera">
+
+        <ListPreference
+            app:defaultValue="front"
+            app:entries="@array/camera_lens"
+            app:entryValues="@array/camera_lens_values"
+            app:key="camera_lens"
+            app:title="@string/camera_lens"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_bolt"
+        app:title="@string/active_settings">
+
+        <MultiSelectListPreference
+            app:defaultValue="@array/active_checks_default"
+            app:entries="@array/active_checks"
+            app:entryValues="@array/active_checks_values"
+            app:key="active_checks"
+            app:summary="@string/active_checks_summary"
+            app:title="@string/active_checks" />
+
+        <ListPreference
+            app:defaultValue="3"
+            app:entries="@array/active_check_count"
+            app:entryValues="@array/active_check_count_values"
+            app:key="active_check_count"
+            app:title="@string/active_check_count"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="active_randomize"
+            app:summary="@string/active_randomize_summary"
+            app:title="@string/active_randomize" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_tune"
+        app:title="@string/active_tuning">
+
+        <EditTextPreference
+            app:defaultValue="150"
+            app:key="active_frames_wait"
+            app:summary="@string/active_frames_wait_summary"
+            app:title="@string/active_frames_wait"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="25"
+            app:key="active_yaw"
+            app:title="@string/active_yaw"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="15"
+            app:key="active_pitch"
+            app:title="@string/active_pitch"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0.5"
+            app:key="active_smile"
+            app:title="@string/active_smile"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0.3"
+            app:key="active_blink"
+            app:title="@string/active_blink"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="2"
+            app:key="active_blinks_number"
+            app:title="@string/active_blinks_number"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0.15"
+            app:key="active_perspective"
+            app:title="@string/active_perspective"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="12"
+            app:key="active_align_angle"
+            app:title="@string/active_align_angle"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0.3"
+            app:key="active_min_face"
+            app:summary="@string/active_min_face_summary"
+            app:title="@string/active_min_face"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0.3"
+            app:key="active_quality"
+            app:summary="@string/active_quality_summary"
+            app:title="@string/active_quality"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="active_invert_turn"
+            app:summary="@string/active_invert_turn_summary"
+            app:title="@string/active_invert_turn" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="active_invert_tilt"
+            app:summary="@string/active_invert_tilt_summary"
+            app:title="@string/active_invert_tilt" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_threshold"
+        app:title="@string/thresholds">
+
+        <EditTextPreference
+            app:defaultValue="0.5"
+            app:key="liveness_threshold"
+            app:summary="@string/liveness_threshold_summary"
+            app:title="@string/liveness_threshold"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_reset"
+        app:title="@string/reset">
+
+        <Preference
+            app:key="restore_default_settings"
+            app:title="@string/restore_default_settings" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

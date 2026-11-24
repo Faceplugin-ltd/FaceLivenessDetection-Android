@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+ext {
+    publishArtifactId = 'face-liveness-kit'
+    publishDescription = 'FacePlugin face liveness: engine lifecycle, serialized SDK calls, camera ' +
+        'frames and per-frame face attributes for Android.'
+    publishDependsOnEngine = 'true'
+}
+
+android {
+    namespace 'com.faceplugin.faceliveness.kit'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 24
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
+    }
+}
+
+dependencies {
+    // The engine is compile-only here: an Android library cannot package a local .aar.
+    // The app supplies it at runtime, and published consumers get com.faceplugin:face-recognition-sdk
+    // through the POM (see gradle/publish.gradle).
+    compileOnly files(rootProject.file('libs/facerecognitionsdk.aar'))
+
+    api 'androidx.camera:camera-core:1.4.2'
+    api 'androidx.camera:camera-camera2:1.4.2'
+    api 'androidx.camera:camera-lifecycle:1.4.2'
+    api 'androidx.camera:camera-view:1.4.2'
+    implementation 'androidx.core:core-ktx:1.13.1'
+
+    testImplementation 'junit:junit:4.13.2'
+}
+
+// Maven Central requires a javadoc jar for every artifact.
+apply plugin: 'org.jetbrains.dokka'
+
+tasks.register('javadocJar', Jar) {
+    archiveClassifier.set('javadoc')
+    from tasks.named('dokkaJavadoc')
+}
+
+apply from: "$rootDir/gradle/publish.gradle"

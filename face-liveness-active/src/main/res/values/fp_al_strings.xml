@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text of the active-liveness screen. Prefixed so a host app's strings cannot collide. -->
+<resources>
+    <string name="fp_al_title">Active liveness</string>
+    <string name="fp_al_close">Close</string>
+    <string name="fp_al_switch_camera">Switch camera</string>
+    <string name="fp_al_retry">Try again</string>
+    <string name="fp_al_done">Done</string>
+    <string name="fp_al_step_of">Step %1$d of %2$d</string>
+
+    <string name="fp_al_prepare_title">Get ready</string>
+    <string name="fp_al_prepare_body">Your face is checked for spoofing first, then you will be asked to perform %1$d short actions. Hold the phone at eye level in even light and keep your whole face inside the circle.</string>
+    <string name="fp_al_prepare_start">Start check</string>
+    <string name="fp_al_prepare_passive">Anti-spoofing check</string>
+
+    <string name="fp_al_state_searching">Looking for your face…</string>
+    <string name="fp_al_state_align">Center your face and look straight ahead</string>
+    <string name="fp_al_state_multiple">Only one face in the frame, please</string>
+    <string name="fp_al_state_passive">Hold still — checking for a live face</string>
+    <string name="fp_al_state_starting">Hold still…</string>
+    <string name="fp_al_state_lost">Face lost — the check starts again</string>
+    <string name="fp_al_state_wrong_way">The other way round</string>
+
+    <!-- Why the face in front of the camera cannot be checked -->
+    <string name="fp_al_state_too_far">Move closer — your face is too small in the frame</string>
+    <string name="fp_al_state_too_close">Move back a little — your face does not fit in the frame</string>
+    <string name="fp_al_state_off_center">Move your face into the middle of the circle</string>
+    <string name="fp_al_state_look_straight">Look straight at the camera</string>
+    <string name="fp_al_state_low_quality">Too dark or blurry — find steadier, even light</string>
+    <string name="fp_al_state_not_scorable">Cannot read your face — hold still and face the light</string>
+    <string name="fp_al_restarted">Starting again</string>
+
+    <string name="fp_al_check_smile">Smile</string>
+    <string name="fp_al_check_smile_hint">Give the camera a clear smile</string>
+    <string name="fp_al_check_blink">Blink</string>
+    <string name="fp_al_check_blink_hint">Blink your eyes a couple of times</string>
+    <string name="fp_al_check_turn_up">Look up</string>
+    <string name="fp_al_check_turn_up_hint">Tilt your head up, keep your eyes on the screen</string>
+    <string name="fp_al_check_turn_down">Look down</string>
+    <string name="fp_al_check_turn_down_hint">Tilt your head down slowly</string>
+    <string name="fp_al_check_turn_left">Turn left</string>
+    <string name="fp_al_check_turn_left_hint">Turn your head to your left</string>
+    <string name="fp_al_check_turn_right">Turn right</string>
+    <string name="fp_al_check_turn_right_hint">Turn your head to your right</string>
+    <string name="fp_al_check_perspective">Move closer</string>
+    <string name="fp_al_check_perspective_hint">Bring the phone a little closer to your face</string>
+
+    <string name="fp_al_result_pass_title">Liveness confirmed</string>
+    <string name="fp_al_result_pass_body">The anti-spoofing check passed and all %1$d challenges were completed by a live person.</string>
+    <string name="fp_al_result_fail_title">Liveness not confirmed</string>
+    <string name="fp_al_result_fail_spoof">The anti-spoofing check did not pass, so the challenges were not asked.</string>
+    <string name="fp_al_result_fail_check">The “%1$s” challenge was not completed in time.</string>
+    <string name="fp_al_result_fail_timeout">The sequence timed out before every challenge was completed.</string>
+    <string name="fp_al_result_fail_cancelled">The check was stopped before it finished.</string>
+    <string name="fp_al_result_duration">Completed in %1$.1f s</string>
+    <string name="fp_al_result_passive_score">Passive score %1$d%%</string>
+    <string name="fp_al_result_passive_pending">Passive score —</string>
+    <string name="fp_al_result_steps_title">Checks</string>
+    <string name="fp_al_result_step_passed">Passed</string>
+    <string name="fp_al_result_step_failed">Failed</string>
+    <string name="fp_al_result_step_skipped">Not reached</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Colours of the active-liveness screen. Prefixed so a host app's palette cannot collide. -->
+<resources>
+    <color name="fp_al_scrim">#B3000000</color>
+    <color name="fp_al_scrim_soft">#66000000</color>
+    <color name="fp_al_overlay">#CC06060A</color>
+    <color name="fp_al_glass">#4DFFFFFF</color>
+
+    <color name="fp_al_surface">#14141D</color>
+    <color name="fp_al_stroke">#262635</color>
+    <color name="fp_al_text">#F2F0F7</color>
+    <color name="fp_al_muted">#9B96AC</color>
+
+    <color name="fp_al_accent">#7C5CFF</color>
+    <color name="fp_al_accent_deep">#4A2BB5</color>
+    <color name="fp_al_accent_dim">#2A2140</color>
+    <color name="fp_al_ring">#2EE6C8</color>
+
+    <color name="fp_al_pass">#2EE6A6</color>
+    <color name="fp_al_fail">#E5484D</color>
+</resources>
