@@ -67,7 +67,6 @@ class ActiveLivenessActivity : AppCompatActivity() {
     private lateinit var txtStepCounter: TextView
     private lateinit var panelPrepare: View
     private lateinit var panelResult: View
-    private lateinit var preparePlan: LinearLayout
     private lateinit var resultSteps: LinearLayout
 
     private lateinit var cameraExecutor: ExecutorService
@@ -114,7 +113,6 @@ class ActiveLivenessActivity : AppCompatActivity() {
         txtStepCounter = findViewById(R.id.fp_al_txtStepCounter)
         panelPrepare = findViewById(R.id.fp_al_panelPrepare)
         panelResult = findViewById(R.id.fp_al_panelResult)
-        preparePlan = findViewById(R.id.fp_al_preparePlan)
         resultSteps = findViewById(R.id.fp_al_resultSteps)
 
         cameraExecutor = Executors.newFixedThreadPool(1)
@@ -182,30 +180,10 @@ class ActiveLivenessActivity : AppCompatActivity() {
         overlay.setProgress(0f, animate = false)
         overlay.setAccentColor(color(R.color.fp_al_ring))
 
+        // How many actions, not which ones: naming the sequence in advance is exactly what
+        // options.randomize exists to prevent. The result card lists every step afterwards.
         findViewById<TextView>(R.id.fp_al_txtPrepareBody).text =
             getString(R.string.fp_al_prepare_body, plan.size)
-        preparePlan.removeAllViews()
-        // The gate comes first, then the challenges in the order they will be asked.
-        preparePlan.addView(
-            row(
-                preparePlan,
-                R.drawable.fp_al_ic_shield,
-                getString(R.string.fp_al_prepare_passive),
-                "",
-                color(R.color.fp_al_muted),
-            ),
-        )
-        plan.forEachIndexed { index, check ->
-            preparePlan.addView(
-                row(
-                    preparePlan,
-                    check.iconRes,
-                    getString(check.titleRes),
-                    "${index + 1}",
-                    color(R.color.fp_al_muted),
-                ),
-            )
-        }
     }
 
     private fun startAttempt() {
