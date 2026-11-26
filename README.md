@@ -45,7 +45,6 @@ This repository is the whole product: the **engine** (`libs/facerecognitionsdk.a
 | `app` | The demo, built from those two libraries |
 | `libs/` | `facerecognitionsdk.aar`, the engine |
 
-Publishing the two libraries to Maven Central: [PUBLISHING.md](PUBLISHING.md).
 
 ### Main Functionalities
 
@@ -308,7 +307,10 @@ Minimal integration (details: [doc.faceplugin.com](https://doc.faceplugin.com)):
 6. Passive: `FaceEngine.detect(bitmap, DetectOptions.PASSIVE)` per frame. Active: launch
    `ActiveLivenessActivity` for a result — see [Active liveness](#active-liveness).
 
-Prefer Maven Central to copying the modules? See [PUBLISHING.md](PUBLISHING.md).
+Prefer prebuilt AARs to copying the modules? `liveness-libs.zip` on the
+[Releases page](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/releases/latest)
+holds `face-liveness-kit.aar` and `face-liveness-active.aar` — that is what the .NET MAUI app
+consumes.
 
 Request a license for **your** `applicationId`, not the demo’s.
 
