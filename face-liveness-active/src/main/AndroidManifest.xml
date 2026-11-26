@@ -8,6 +8,7 @@
         <activity
             android:name=".ActiveLivenessActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 </manifest>

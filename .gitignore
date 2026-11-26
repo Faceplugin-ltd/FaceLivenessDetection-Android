@@ -50,3 +50,4 @@ source_libraries/
 build_libraries/
 .patch_runtime_state.json
 **/.patch_runtime_state.json
+PUBLISHING.md

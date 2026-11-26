@@ -1,16 +1,11 @@
 # Runtime AAR
 
-Place `facerecognitionsdk.aar` in this folder — the engine this app runs on. It is built by
-**Face-Recognition-LivenessDetection-Android-LX-SDK**, the same runtime the
-Face-Recognition-LivenessDetection-Android demo uses:
-
-```bash
-# from Face-Recognition-LivenessDetection-Android-LX-SDK
-python scripts/export.py --app <path to Face-LivenessDetection-Android>
-```
+Place `facerecognitionsdk.aar` in this folder — the engine this app runs on. It is the same
+runtime the [FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android)
+demo uses.
 
 Gradle fails fast when the file is missing.
 
 ## Get the runtime
 
-**[Runtime libraries — `Face-LivenessDetection/Android`](https://drive.google.com/drive/folders/1P4eEywqYv0ibw40Ikrv0SnORmT6E8YRf?usp=sharing)**
+**[Download the engine from Releases](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android/releases/tag/latest)**

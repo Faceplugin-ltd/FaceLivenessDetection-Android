@@ -13,9 +13,8 @@ import java.util.concurrent.Executors
  * Process-wide engine owner: activation and init on a background thread, a lock that serializes
  * every SDK call, and a small state observable for the UI.
  *
- * The engine is [FaceRecognitionSDK] from `libs/facerecognitionsdk.aar`, built by
- * Face-Recognition-LivenessDetection-Android-LX-SDK. It is not concurrent, so every call made
- * from this app goes through [lock], and long calls belong on [worker].
+ * The engine is [FaceRecognitionSDK] from `libs/facerecognitionsdk.aar`. It is not concurrent,
+ * so every call made from this app goes through [lock], and long calls belong on [worker].
  */
 object FaceEngine {
 

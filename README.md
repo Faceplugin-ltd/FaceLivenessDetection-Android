@@ -34,7 +34,7 @@ It runs liveness two ways, and this demo app ships both:
 
 All processing stays on the phone. **No** biometric data leaves the device.
 
-This repository is the whole product: the **engine** (`libs/facerecognitionsdk.aar`), two **helper libraries** you add to your project, and a **demo app** built from those same libraries — so what you read here is what the demo runs. The engine is built by **Face-Recognition-LivenessDetection-Android-LX-SDK**, the same build the [Face-Recognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android) demo uses.
+This repository is the whole product: the **engine** (`libs/facerecognitionsdk.aar`), two **helper libraries** you add to your project, and a **demo app** built from those same libraries — so what you read here is what the demo runs. The engine is the same build the [FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android) demo uses.
 
 ### What is in here
 
@@ -68,7 +68,8 @@ Publishing the two libraries to Maven Central: [PUBLISHING.md](PUBLISHING.md).
 | Ionic Cordova | [FaceLivenessDetection-Ionic-Cordova](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Ionic-Cordova) |
 | Ionic Capacitor | [FaceLivenessDetection-Ionic-Capacitor](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Ionic-Capacitor) |
 | Windows | [FaceLivenessDetection-Windows](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Windows) |
-| Linux | [FaceLivenessDetection-Linux](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Linux) |
+| Linux / Docker | [FaceLivenessDetection-Docker](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker) |
+
 ### Related products
 
 - **Face Recognition + Liveness — Android** — [FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android) — recognition + liveness + attributes
@@ -101,13 +102,6 @@ when the file is missing.
 ### Where to get it
 
 **[Download the engine from Releases](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android/releases/tag/latest)**
-
-Inside FacePlugin, the same file comes straight out of the SDK repository:
-
-```bash
-# from Face-Recognition-LivenessDetection-Android-LX-SDK
-python scripts/export.py --app ../../APPs/Face-LivenessDetection-Android
-```
 
 ### How to place it
 

@@ -20,7 +20,7 @@ validation requires.
 > (`publishDependsOnEngine`), so a consumer still gets the engine from one line — there is just one
 > copy of the ~78 MB binary on Central instead of two. If you ever need a liveness-only engine
 > coordinate, change `ENGINE_ARTIFACT_ID` in [`gradle/publish.gradle`](gradle/publish.gradle) and
-> publish it from the SDK repository, not from here.
+> publish the engine separately, not from here.
 
 ## One-time setup
 
@@ -60,12 +60,7 @@ validation requires.
    faceplugin.version=1.0.0
    ```
 
-2. Make sure `libs/facerecognitionsdk.aar` is the build the libraries were tested against. From
-   Face-Recognition-LivenessDetection-Android-LX-SDK:
-
-   ```powershell
-   python scripts/export.py --app <path to Face-LivenessDetection-Android>
-   ```
+2. Make sure `libs/facerecognitionsdk.aar` is the build the libraries were tested against.
 
 3. Dry run into `build/staging-deploy/` first:
 
